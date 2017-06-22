@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto; }
+
+.header {
+  width: 100%;
+  background-color: #707070;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .header .tours #menu-trigger {
+    color: #fff;
+    padding: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: none;
+    position: relative; }
+    .header .tours #menu-trigger i {
+      position: absolute;
+      top: 28px;
+      right: 10px; }
+  .header .tours ul {
+    display: block; }
+    .header .tours ul li {
+      display: inline-block;
+      padding: 25px; }
+      .header .tours ul li a {
+        font-size: 14px;
+        color: #fff;
+        text-transform: uppercase;
+        display: block; }
+        .header .tours ul li a:hover {
+          color: #2e2e2e;
+          text-decoration: none;
+          -webkit-transition: .4s ease;
+          transition: .4s ease; }
+  .header .fav-tours ul {
+    display: block; }
+    .header .fav-tours ul li {
+      display: inline-block;
+      padding: 25px; }
+      .header .fav-tours ul li a {
+        font-size: 14px;
+        color: #fff;
+        text-transform: uppercase;
+        position: relative;
+        display: block; }
+        .header .fav-tours ul li a i {
+          position: absolute;
+          top: 0;
+          left: -25px; }
+        .header .fav-tours ul li a:hover {
+          color: #2e2e2e;
+          text-decoration: none;
+          -webkit-transition: .4s ease;
+          transition: .4s ease; }
+    .header .fav-tours ul li#hide {
+      position: relative; }
+      .header .fav-tours ul li#hide i {
+        position: absolute;
+        top: -5px; }
+
+#hide {
+  display: none; }
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 25px; }
+  .form .form-to {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .form .form-to .to span {
+      text-align: left;
+      font-size: 22px;
+      color: #666; }
+    .form .form-to .to input {
+      margin: 10px 0;
+      width: 600px; }
+    .form .form-to .main {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin: 20px 0; }
+      .form .form-to .main .start span {
+        text-align: left;
+        font-size: 22px;
+        color: #666; }
+      .form .form-to .main .start input {
+        width: 270px;
+        margin: 10px 0; }
+      .form .form-to .main .travel span {
+        text-align: left;
+        font-size: 22px;
+        color: #666; }
+      .form .form-to .main .travel select {
+        width: 270px;
+        margin: 10px 0;
+        height: 24px; }
+  .form .form-from {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .form .form-from .from span {
+      text-align: сутеук;
+      font-size: 22px;
+      color: #666; }
+    .form .form-from .from select {
+      width: 270px;
+      height: 24px;
+      margin: 10px 0; }
+    .form .form-from .btn {
+      margin: 20px 0; }
+      .form .form-from .btn button {
+        width: 270px;
+        height: 55px;
+        border-radius: 4px;
+        margin-left: -12px; }

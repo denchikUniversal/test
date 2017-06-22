@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TEST</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/daterangepicker.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="container">
+
+	<header class="header">
+       <div class="tours">
+        <nav id="top-menu">
+        <a href="#" id="menu-trigger">экскурсионные туры<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+       	  <ul>
+       	  	<li><a href="#">пакетные туры</a></li>
+       	  	<li><a href="#">экскурсионные туры</a></li>
+       	  	<li><a href="#">билеты</a></li>
+       	  	<li><a href="#">отели</a></li>
+       	  </ul>
+       	</nav>
+       </div>
+
+       <div class="fav-tours">
+       	  <ul>
+       	  	<li id="hidden"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i>избранные туры</a></li>
+       	  	<li id="hide"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+       	  	<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>вход</a></li>
+       	  </ul>
+       </div>
+    </header>
+
+    <section class="form">
+    	
+     <div class="form-to">
+       <div class="to">
+       	<span>Куда</span><br>
+       	 <input list="country" name="country" placeholder="Страна">
+		  <datalist id="country">
+		    <option value="Италия">
+		    <option value="Франция">
+		    <option value="Польша">
+		    <option value="Китай">
+		    <option value="Ирак">
+		  </datalist>
+       </div>
+
+       <div class="main">
+       	  <div class="start">
+       	  	<span>Дата начала тура</span><br>
+       	  	<input type="text" name="daterange" value="01/02/2017 - 01/05/2017" />
+       	  </div>
+       	  <div class="travel">
+       	  	<span>Проезд</span><br>
+       	  	<select >
+			    <option>Включен</option>
+			    <option>Выключен</option>
+		   </select>
+       	  </div>
+       </div>
+     </div>
+
+     <div class="form-from">
+     	<div class="from">
+     		<span>Откуда</span><br>
+     		<select>
+			  <option>Киев</option>
+			  <option>Львов</option>
+			  <option>Одесса</option>
+			  <option>Харьков</option>
+			</select>
+     	</div>
+     	<div class="btn">
+     		<button>Найти</button>
+     		<p>Больше параметров поиска <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+     	</div>
+     </div>
+
+    </section>
+
+   </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script> -->
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/moment.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="https://use.fontawesome.com/30860ad3b4.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
